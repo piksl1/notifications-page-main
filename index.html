@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="normalize.css" />
+    <!-- the jakarta font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 30px;
+        margin-top: 30px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="notifications">
+        <h3>Notifications</h3>
+        <div class="functions">
+          <div class="counter">3</div>
+          <a href="#">Mark as all read</a>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <img src="assets/images/avatar-mark-webber.webp" alt="" />
+          <div class="about">
+            <a href="#" class="name">Mark Webber </a> reacted to your recent
+            post <a href="#" class="event"> My first tournament today!</a
+            ><span class="dot first"></span>
+            <span class="timer">1m ago</span>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-angela-gray.webp" alt="" />
+          <div class="about">
+            <a href="#" class="name">Angela Gray </a> followed you<span
+              class="dot second"
+            ></span>
+            <span class="timer">5m ago</span>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-jacob-thompson.webp" alt="" />
+          <div class="about">
+            <a href="#" class="name">Jacob Thompson </a> has joined your group
+            <a href="#" class="event"> Chess Club</a
+            ><span class="dot third"></span>
+            <span class="timer">1 day ago</span>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+          <div class="about">
+            <a href="#" class="name">Rizky Hasanuddin </a> sent you a private
+            message
+            <span class="timer">5 days ago</span>
+            <p class="message">
+              Hello,thanks for setting up the Chess Club. I've been a member for
+              a few weeks now and I'm already having lots of fun and improving
+              my game.
+            </p>
+          </div>
+        </li>
+        <li class="kimberly">
+          <img src="assets/images/avatar-kimberly-smith.webp" alt="" />
+          <div class="about">
+            <a href="#" class="name">Kimberly Smith</a> commented on your
+            picture
+            <img src="assets/images/image-chess.webp" alt="" />
+            <span class="timer">1 week ago</span>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-nathan-peterson.webp" alt="" />
+          <div class="about">
+            <a href="#" class="name">Nathan Peterson </a> reacted to your recent
+            post
+            <strong> 5 end-game strategies to increase your win rate</strong>
+            <span class="timer">2 week ago</span>
+          </div>
+        </li>
+        <li>
+          <img src="assets/images/avatar-anna-kim.webp" alt="" />
+          <div class="about">
+            <a href="#" class="name">Anna Kim </a> left your group
+            <a href="#" class="event"> Chess Club</a>
+            <span class="timer">2 week ago</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+/*Start Global Rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+li {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*Medium*/
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*Large*/
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*End Global Rules*/
+:root {
+    --primary-blue: hsl(219, 85%, 26%);
+    --primary-red: hsl(1, 90%, 64%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-gray: hsl(219, 12%, 42%);
+    --light-blue: hsl(210, 60%, 98%);
+    --dark-blue: hsl(224, 21%, 14%);
+
+}
+
+.container {
+    margin-top: 60px;
+    max-width: 700px;
+}
+
+.notifications {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+h3 {
+    display: inline-flex;
+}
+
+.notifications .functions {
+
+    display: inline-flex
+}
+
+.notifications .functions .counter {
+    padding: 2px 8px;
+    background-color: var(--primary-blue);
+    border-radius: 25%;
+    margin-left: 5px;
+    color: white;
+}
+
+.notifications .functions a {
+    position: absolute;
+    right: 0;
+    color: var(--dark-gray);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    row-gap: 35px;
+}
+
+ul li {
+    position: relative;
+    padding-top: 10px;
+}
+
+ul li img {
+    height: 45px;
+    width: 45px;
+}
+
+ul li a.name {
+    font-weight: bold;
+    color: black;
+}
+
+ul li a.event {
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+.notifications .functions a:hover,
+ul li a.name:hover,
+ul li a.event:hover {
+    color: var(--primary-blue);
+}
+
+
+ul li:not(.kimberly) .about {
+    display: inline-block;
+    position: absolute;
+    margin-left: 15px;
+}
+
+
+ul li .about p.message {
+    padding: 24px;
+    cursor: pointer;
+}
+
+ul li .about p.message:hover {
+    background-color: #E5EFF9;
+}
+
+ul li .about span.timer {
+    color: var(--grayish-blue);
+}
+
+ul li .about strong {
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+ul li .about strong:hover {
+    color: var(--primary-blue);
+    cursor: pointer;
+}
+
+ul li.kimberly .about {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+ul li.kimberly .about img {
+    position: absolute;
+    right: 0;
+}
+
+ul li.kimberly {
+    margin-top: 50px;
+}
+
+ul li .about span.timer {
+    display: block;
+}
+
+li span.dot {
+    position: absolute;
+    right: -10px;
+    top: 30%;
+    transform: translate(50%, -50%);
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media (max-width: 375px) {
+    li span.dot.first {
+        top: 25px;
+        right: 30px;
+    }
+
+    li span.dot.second {
+        top: 10px;
+        right: -10px;
+    }
+
+    li span.dot.third {
+        top: 23px;
+        right: 115px;
+    }
+
+    li {
+        font-size: 13px;
+    }
+
+    ul li.kimberly {
+        margin-top: 100px;
+        display: inline-flex;
+    }
+
+    ul li.kimberly .about {
+        position: relative;
+        padding-right: 45px;
+    }
+
+    ul li.kimberly .about img {
+        top: 0;
+    }
+}
